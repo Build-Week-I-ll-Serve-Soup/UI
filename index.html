@@ -5,45 +5,47 @@
         <meta charset="utf-8">
 
         <title>I'll Serve Soup</title>
-      
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      
+
+
         <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet">
-      
+
 </head>
 
 <body>
-    <div class="container home">
-<nav>
-    <h1>The template Tag</h1>
-    <div>
-        <h3></h3>
-    </div>
-
-</nav>
-
-<p>Click the button to get the content from a template, and display it in the web page.</p>
-
-<button onclick="showContent()">Show content</button>
-
-<template>
-  <h2>Flower</h2>
-  <img src="img_white_flower.jpg" width="214" height="204">
-</template>
-
-<script>
-function showContent() {
-  var temp = document.getElementsByTagName("template")[0];
-  var clon = temp.content.cloneNode(true);
-  document.body.appendChild(clon);
-}
-</script>
+<div class="container home">
+    <header>
+        <div>
+            <img class="header" src="img/textLogo.png" alt="I'll Serve Soup text Logo">
+            <nav>
+                <a href="#">About Us</a>
+                <a href="#">Home</a>
+            </nav>
+        </div>
+    </header>
 
 
 
-
+    <section class="welcome">
+        <div>
+            <div class="imgTitle">
+                <img class="logo" src="img/mainLogo.png" alt="I'll Serve Soup logo">
+                <h2>About Us</h2>
+            </div>
+                <div class="content"> 
+                <p>It's important to me that you're happy. In nature, dead trees are just as normal as live trees. When you buy that first tube of paint it gives you an artist license.</p>
+                <p>We're trying to teach you a technique here and how to use it. Now we don't want him to get lonely, so we'll give him a little friend. Everyone is going to see things differently - and that's the way it should be. Just make a decision and let it go. You have to make those little noises or it won't work. Talent is a pursued interest. That is to say, anything you practice you can do.</p>
+                <p>Go out on a limb - that's where the fruit is. All kinds of happy little splashes. The man who does the best job is the one who is happy at his job.</p>
+                <p>Only eight colors that you need. Isn't that fantastic that you can create an almighty tree that fast? A tree needs to be your friend if you're going to paint him. That's a crooked tree. We'll send him to Washington.</p>
+                <p>We don't need any guidelines or formats. All we need to do is just let it flow right out of us. Maybe there's a happy little Evergreen that lives here. Just go back and put one little more happy tree in there. We'll make some happy little bushes here. Maybe there's a happy little waterfall happening over here.</p>
+                </div>
+            
+                <button >Register</button>
+                <button >Sign In</button>
+            </div>
+                </section>
 
 
 

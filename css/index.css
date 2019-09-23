@@ -159,7 +159,53 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-h1 {
-  font-size: 9rem;
-  color: red;
+header {
+  color: black;
+  padding: 0% 0% 10% 0%;
+  background-color: #BB4142;
+  height: 90px;
+}
+header div {
+  display: flex;
+  align-content: space-between;
+  border-bottom: 2px solid #F3BE38;
+}
+header div nav {
+  justify-content: space-between;
+  padding: 3.5% 0% 0% 0%;
+}
+header div nav a {
+  color: #CDC59C;
+  font-size: 2.6rem;
+  text-decoration: none;
+  margin: 32px;
+}
+header div img {
+  width: 30%;
+  margin: 0% 30% 0% 0%;
+  height: 100%;
+}
+.welcome {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10%;
+  background-color: #CA5930;
+}
+.welcome div {
+  display: flex;
+  flex-direction: column;
+}
+.welcome div img {
+  width: 40%;
+  align-self: center;
+}
+.welcome div h2 {
+  align-self: center;
+}
+.welcome div p {
+  text-align: center;
+}
+.welcome div button {
+  justify-content: center;
+  border: 2px solid black;
 }
