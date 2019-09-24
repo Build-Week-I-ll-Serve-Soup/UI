@@ -6,6 +6,11 @@ h4{
 .volunteer {
     .backColor();
     padding:3%;
+    .volunteerPic {
+        @media @phone {
+            display: none;
+          }
+    }
 
     .volunteerText{
         padding:2%;
@@ -22,16 +27,15 @@ h4{
         p{
             padding-left: 2%;
             .align();
-            @media @phone{
-                background-color: black;
-            }
-
         }
         
     }
     .apartSec{
         padding:3%;
         display: flex;
+        @media @phone {
+            flex-direction: column;
+        }
 
         .apartText{
             padding:2%;
@@ -59,6 +63,9 @@ h4{
     display: flex;
     border-top: 2px solid @yellow;
     border-bottom: 2px solid @yellow;
+    @media @phone {
+        flex-direction: column;
+    }
     
     
     .top{
@@ -68,10 +75,17 @@ h4{
         h1{
             font-size: 3rem;
             padding-bottom: 12%;
-    
         }
         p{
             color:black;
+            @media @phone {
+                border-bottom: 2px solid @yellow;
+            }
+        }
+        img{
+            @media @phone {
+            display: none;
+            }
         }
     }
     .bottom{
