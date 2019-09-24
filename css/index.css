@@ -7,6 +7,12 @@
 .backColor {
   background-color: #CA5930;
 }
+.backColor2 {
+  background-color: #F3BE38;
+}
+.align {
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -292,8 +298,73 @@ h4 {
 }
 .volunteer {
   background-color: #CA5930;
+  padding: 3%;
 }
-.volunteer img {
-  align-self: center;
-  width: 60%;
+.volunteer .volunteerText {
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #F3BE38;
+}
+.volunteer .volunteerText h4 {
+  align-self: flex-start;
+  padding-right: 2%;
+  border-right: 2px solid #F3BE38;
+  text-align: center;
+}
+.volunteer .volunteerText p {
+  padding-left: 2%;
+  text-align: center;
+}
+.volunteer .apartSec {
+  padding: 3%;
+  display: flex;
+}
+.volunteer .apartSec .apartText {
+  padding: 2%;
+}
+.volunteer .apartSec .apartText h4 {
+  padding-bottom: 2%;
+  text-align: center;
+}
+.volunteer .apartSec .apartText p {
+  text-align: center;
+}
+.volunteer .apartSec .apartPic {
+  width: 500px;
+}
+.volunteer .apartSec .apartPic img {
+  width: 100%;
+}
+.info {
+  background-color: #F3BE38;
+  display: flex;
+  border-top: 2px solid #F3BE38;
+  border-bottom: 2px solid #F3BE38;
+}
+.info .top {
+  padding: 5% 5% 0% 5%;
+  background-color: #CA5930;
+  border-right: 2px solid #F3BE38;
+}
+.info .top h1 {
+  font-size: 3rem;
+  padding-bottom: 12%;
+}
+.info .top p {
+  color: black;
+}
+.info .bottom {
+  padding: 5% 5% 2% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info .bottom p {
+  padding: 2%;
+  text-align: center;
+}
+.info .bottom img {
+  width: 40%;
+  padding-bottom: 2%;
 }
