@@ -11,17 +11,20 @@ h4{
         padding:2%;
         display: flex;
         align-items: center;
-        border-bottom: 2px solid #F3BE38;
+        border-bottom: 2px solid @yellow;
         h4{
             align-self: flex-start;
             padding-right: 2%;
-            border-right:2px solid #F3BE38;
+            border-right:2px solid @yellow;
             .align();
 
         }
         p{
             padding-left: 2%;
             .align();
+            @media @phone{
+                background-color: black;
+            }
 
         }
         
@@ -54,14 +57,14 @@ h4{
 .info{
     .backColor2();
     display: flex;
-    border-top: 2px solid #F3BE38;
-    border-bottom: 2px solid #F3BE38;
+    border-top: 2px solid @yellow;
+    border-bottom: 2px solid @yellow;
     
     
     .top{
         padding: 5% 5% 0% 5%;
         .backColor();
-        border-right: 2px solid #F3BE38;
+        border-right: 2px solid @yellow;
         h1{
             font-size: 3rem;
             padding-bottom: 12%;

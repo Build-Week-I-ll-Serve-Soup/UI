@@ -2,9 +2,9 @@
 header{
     color:black;
     padding:0% 0% 10% 0%;
-    background-color: #BB4142;
+    background-color: @soupColor;
     height: 90px;
-    border-bottom: 2px solid #F3BE38;
+    border-bottom: 2px solid @yellow;
 
     @media(max-width: 500px) {
         height: 200px;;
@@ -23,7 +23,7 @@ header{
                 align-self: center;
               }
             a{
-                color:#CDC59C;
+                .fontColor();
                 font-size: 2.6rem;
                 text-decoration: none;
                 margin:32px;
@@ -43,7 +43,7 @@ header{
 .welcome{
     display: flex; 
     justify-content: center;
-    background-color: #CA5930;
+    background-color: @orange;
     div{
         display: flex;
         flex-direction: column;
@@ -62,7 +62,7 @@ header{
         }
         p{
             text-align: center;
-            border-bottom: 2px solid #F3BE38;
+            border-bottom: 2px solid @yellow;
             .fontColor();
 
         }
@@ -71,12 +71,12 @@ header{
     }
 }
 .bottom {
-    background: #BB4142;
+    background: @soupColor;
    h2 {
     display: flex;
     justify-content: center;
     padding-top: 2%;
-    color: #CDC59C;
+    .fontColor();
   }
    div {
     display: flex;
@@ -93,8 +93,8 @@ footer {
     justify-content: center;
     padding-top: 2%;
     padding-bottom: 2%;
-    color: #CDC59C;
-    background: #CA5930;
+    .fontColor();
+    background: @orange;
   }
 
 

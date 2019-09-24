@@ -316,6 +316,11 @@ h4 {
   padding-left: 2%;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .volunteer .volunteerText p {
+    background-color: black;
+  }
+}
 .volunteer .apartSec {
   padding: 3%;
   display: flex;
