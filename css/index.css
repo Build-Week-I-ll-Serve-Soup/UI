@@ -4,6 +4,9 @@
 .titleColors {
   color: #BB4142;
 }
+.backColor {
+  background-color: #CA5930;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -172,6 +175,7 @@ header {
   padding: 0% 0% 10% 0%;
   background-color: #BB4142;
   height: 90px;
+  border-bottom: 2px solid #F3BE38;
 }
 @media (max-width: 500px) {
   header {
@@ -181,7 +185,6 @@ header {
 header div {
   display: flex;
   align-content: space-between;
-  border-bottom: 2px solid #F3BE38;
 }
 @media (max-width: 500px) {
   header div {
@@ -283,4 +286,14 @@ footer {
 .about .team .text h3 {
   align-self: center;
   color: #BB4142;
+}
+h4 {
+  font-size: 1.8rem;
+}
+.volunteer {
+  background-color: #CA5930;
+}
+.volunteer img {
+  align-self: center;
+  width: 60%;
 }
