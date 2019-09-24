@@ -1,0 +1,119 @@
+
+header{
+    color:black;
+    padding:0% 0% 10% 0%;
+    background-color: #BB4142;
+    height: 90px;
+    @media(max-width: 500px) {
+        height: 200px;;
+      }
+    div{
+        display: flex;
+        align-content: space-between;
+        border-bottom: 2px solid #F3BE38;
+        @media(max-width: 500px) {
+            flex-direction: column;
+          }
+        
+        nav{
+            justify-content: space-between;
+            padding:3.5% 0% 0% 0%;
+            @media(max-width: 500px) {
+                align-self: center;
+              }
+            a{
+                color:#CDC59C;
+                font-size: 2.6rem;
+                text-decoration: none;
+                margin:32px;
+            }
+        }
+        img{
+            width: 30%;
+            margin: 0% 30% 0% 0%;
+            height: 100%;     
+            @media(max-width: 500px) {
+                width: 100%;
+              }   
+        }
+    }
+}
+
+.welcome{
+    display: flex; 
+    justify-content: center;
+    background-color: #CA5930;
+    div{
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        img{
+            width:40%;
+            align-self: center;
+            @media(max-width: 500px) {
+                width: 90%;
+              }
+        }
+        h2{
+            align-self: center;
+            .fontColor();
+
+        }
+        p{
+            text-align: center;
+            border-bottom: 2px solid #F3BE38;
+            .fontColor();
+
+        }
+        
+
+    }
+}
+.bottom {
+    background: #BB4142;
+   h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    color: #CDC59C;
+  }
+   div {
+    display: flex;
+    justify-content: space-around;
+     h4 {
+        font-size: 2rem;
+        padding: 3% 0;
+      }
+  }
+   
+}
+footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #CDC59C;
+    background: #CA5930;
+  }
+
+
+.about{
+    .team {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding-bottom: 3%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+        .text {
+            padding-left: 20%;
+            padding-top: 4%;
+            height: 30vh;
+            width: 70vw;
+            h3{
+                align-self: center;
+                .titleColors
+            }
+        }
+    }
+}
