@@ -173,14 +173,29 @@ header {
   background-color: #BB4142;
   height: 90px;
 }
+@media (max-width: 500px) {
+  header {
+    height: 200px;
+  }
+}
 header div {
   display: flex;
   align-content: space-between;
   border-bottom: 2px solid #F3BE38;
 }
+@media (max-width: 500px) {
+  header div {
+    flex-direction: column;
+  }
+}
 header div nav {
   justify-content: space-between;
   padding: 3.5% 0% 0% 0%;
+}
+@media (max-width: 500px) {
+  header div nav {
+    align-self: center;
+  }
 }
 header div nav a {
   color: #CDC59C;
@@ -192,6 +207,11 @@ header div img {
   width: 30%;
   margin: 0% 30% 0% 0%;
   height: 100%;
+}
+@media (max-width: 500px) {
+  header div img {
+    width: 100%;
+  }
 }
 .welcome {
   display: flex;
@@ -206,6 +226,11 @@ header div img {
 .welcome div img {
   width: 40%;
   align-self: center;
+}
+@media (max-width: 500px) {
+  .welcome div img {
+    width: 90%;
+  }
 }
 .welcome div h2 {
   align-self: center;
