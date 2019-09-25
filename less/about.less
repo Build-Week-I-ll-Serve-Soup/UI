@@ -2,27 +2,30 @@
 header{
     color:black;
     padding:0% 0% 10% 0%;
-    background-color: #BB4142;
+    background-color: @soupColor;
     height: 90px;
-    @media(max-width: 500px) {
-        height: 200px;;
+    border-bottom: 2px solid @yellow;
+
+    @media @phone {
+        height: 170px;
+        flex-direction: column;
       }
     div{
         display: flex;
         align-content: space-between;
-        border-bottom: 2px solid #F3BE38;
-        @media(max-width: 500px) {
+        @media @phone {
             flex-direction: column;
           }
         
         nav{
             justify-content: space-between;
             padding:3.5% 0% 0% 0%;
-            @media(max-width: 500px) {
+            @media @phone {
                 align-self: center;
+
               }
             a{
-                color:#CDC59C;
+                .fontColor();
                 font-size: 2.6rem;
                 text-decoration: none;
                 margin:32px;
@@ -32,8 +35,11 @@ header{
             width: 30%;
             margin: 0% 30% 0% 0%;
             height: 100%;     
-            @media(max-width: 500px) {
-                width: 100%;
+            @media @phone {
+                width: 70%;
+                align-self: center;
+                margin:0;
+
               }   
         }
     }
@@ -42,7 +48,7 @@ header{
 .welcome{
     display: flex; 
     justify-content: center;
-    background-color: #CA5930;
+    background-color: @orange;
     div{
         display: flex;
         flex-direction: column;
@@ -50,7 +56,7 @@ header{
         img{
             width:40%;
             align-self: center;
-            @media(max-width: 500px) {
+            @media @phone {
                 width: 90%;
               }
         }
@@ -61,7 +67,7 @@ header{
         }
         p{
             text-align: center;
-            border-bottom: 2px solid #F3BE38;
+            border-bottom: 2px solid @yellow;
             .fontColor();
 
         }
@@ -70,12 +76,12 @@ header{
     }
 }
 .bottom {
-    background: #BB4142;
+    background: @soupColor;
    h2 {
     display: flex;
     justify-content: center;
     padding-top: 2%;
-    color: #CDC59C;
+    .fontColor();
   }
    div {
     display: flex;
@@ -92,8 +98,8 @@ footer {
     justify-content: center;
     padding-top: 2%;
     padding-bottom: 2%;
-    color: #CDC59C;
-    background: #CA5930;
+    .fontColor();
+    background: @orange;
   }
 
 

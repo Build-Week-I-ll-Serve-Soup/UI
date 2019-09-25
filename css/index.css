@@ -4,6 +4,15 @@
 .titleColors {
   color: #BB4142;
 }
+.backColor {
+  background-color: #CA5930;
+}
+.backColor2 {
+  background-color: #F3BE38;
+}
+.align {
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -172,16 +181,17 @@ header {
   padding: 0% 0% 10% 0%;
   background-color: #BB4142;
   height: 90px;
+  border-bottom: 2px solid #F3BE38;
 }
 @media (max-width: 500px) {
   header {
-    height: 200px;
+    height: 170px;
+    flex-direction: column;
   }
 }
 header div {
   display: flex;
   align-content: space-between;
-  border-bottom: 2px solid #F3BE38;
 }
 @media (max-width: 500px) {
   header div {
@@ -210,7 +220,9 @@ header div img {
 }
 @media (max-width: 500px) {
   header div img {
-    width: 100%;
+    width: 70%;
+    align-self: center;
+    margin: 0;
   }
 }
 .welcome {
@@ -283,4 +295,104 @@ footer {
 .about .team .text h3 {
   align-self: center;
   color: #BB4142;
+}
+h4 {
+  font-size: 1.8rem;
+}
+.volunteer {
+  background-color: #CA5930;
+  padding: 3%;
+}
+@media (max-width: 500px) {
+  .volunteer .volunteerPic {
+    display: none;
+  }
+}
+.volunteer .volunteerText {
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #F3BE38;
+}
+.volunteer .volunteerText h4 {
+  align-self: flex-start;
+  padding-right: 2%;
+  border-right: 2px solid #F3BE38;
+  text-align: center;
+}
+.volunteer .volunteerText p {
+  padding-left: 2%;
+  text-align: center;
+}
+.volunteer .apartSec {
+  padding: 3%;
+  display: flex;
+}
+@media (max-width: 500px) {
+  .volunteer .apartSec {
+    flex-direction: column;
+  }
+}
+.volunteer .apartSec .apartText {
+  padding: 2%;
+}
+.volunteer .apartSec .apartText h4 {
+  padding-bottom: 2%;
+  text-align: center;
+}
+.volunteer .apartSec .apartText p {
+  text-align: center;
+}
+.volunteer .apartSec .apartPic {
+  width: 500px;
+}
+.volunteer .apartSec .apartPic img {
+  width: 100%;
+}
+.info {
+  background-color: #F3BE38;
+  display: flex;
+  border-top: 2px solid #F3BE38;
+  border-bottom: 2px solid #F3BE38;
+}
+@media (max-width: 500px) {
+  .info {
+    flex-direction: column;
+  }
+}
+.info .top {
+  padding: 5% 5% 0% 5%;
+  background-color: #CA5930;
+  border-right: 2px solid #F3BE38;
+}
+.info .top h1 {
+  font-size: 3rem;
+  padding-bottom: 12%;
+}
+.info .top p {
+  color: black;
+}
+@media (max-width: 500px) {
+  .info .top p {
+    border-bottom: 2px solid #F3BE38;
+  }
+}
+@media (max-width: 500px) {
+  .info .top img {
+    display: none;
+  }
+}
+.info .bottom {
+  padding: 5% 5% 2% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info .bottom p {
+  padding: 2%;
+  text-align: center;
+}
+.info .bottom img {
+  width: 40%;
+  padding-bottom: 2%;
 }
