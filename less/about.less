@@ -81,7 +81,8 @@ header{
     display: flex;
     justify-content: center;
     padding-top: 2%;
-    .fontColor();
+    .fontTitleColor(5rem, underline);
+
   }
    div {
     display: flex;
@@ -98,7 +99,7 @@ footer {
     justify-content: center;
     padding-top: 2%;
     padding-bottom: 2%;
-    .fontColor();
+    .fontTitleColor(1rem, medium);
     background: @orange;
   }
 
@@ -118,8 +119,12 @@ footer {
             width: 70vw;
             h3{
                 align-self: center;
-                .titleColors
+                .titleColors();
+            }
+            a{
+                .gitFont(6rem,center,white);
             }
         }
     }
 }
+
