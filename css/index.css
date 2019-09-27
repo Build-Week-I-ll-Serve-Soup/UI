@@ -261,6 +261,8 @@ header div img {
   justify-content: center;
   padding-top: 2%;
   color: #CDC59C;
+  font-size: 5rem;
+  text-decoration: underline;
 }
 .bottom div {
   display: flex;
@@ -276,6 +278,8 @@ footer {
   padding-top: 2%;
   padding-bottom: 2%;
   color: #CDC59C;
+  font-size: 1rem;
+  text-decoration: medium;
   background: #CA5930;
 }
 .about .team {
@@ -296,8 +300,39 @@ footer {
   align-self: center;
   color: #BB4142;
 }
+.about .team .text a {
+  font-size: 6rem;
+  align-self: center;
+  color: white;
+}
 h4 {
   font-size: 1.8rem;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buttons .buttonWrapper .custom-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .buttons .buttonWrapper {
+    flex-direction: column-reverse;
+  }
+}
+.buttons .buttonWrapper .smu {
+  display: block;
+  background-color: #BB4142;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 300px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
 }
 .volunteer {
   background-color: #CA5930;

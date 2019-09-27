@@ -3,6 +3,32 @@ h4{
 }
 
 
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+.buttonWrapper{
+    .custom-layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    };
+    @media @phone {
+      flex-direction:  column-reverse;
+    }
+    .smu{
+      .custom-btn(@soupColor, 300px, white);
+    //   @media @phone {
+    //     font-size:2.7rem;
+    //     width:500px; 
+    //     height: 60px;
+    //     background-color: #17a2b8;
+    //   }
+    }
+  }
+}
+
+
 .volunteer {
     .backColor();
     padding:3%;
@@ -104,3 +130,5 @@ h4{
         }
     }
 }
+
+
