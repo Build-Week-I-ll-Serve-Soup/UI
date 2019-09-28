@@ -33,6 +33,11 @@ h4{
     .backColor();
     padding:3%;
     .volunteerPic {
+        img{
+            height: 370px;
+            width: auto;
+            margin: 5% 0% 5% 0%;
+        }
         @media @phone {
             display: none;
           }
@@ -41,22 +46,19 @@ h4{
     .volunteerText{
         padding:2%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         border-bottom: 2px solid @yellow;
-        h4{
-            align-self: flex-start;
-            padding-right: 2%;
-            border-right:2px solid @yellow;
-            .align();
-
+        h1{
+            font-size: 2.5rem;
+            padding-bottom: 2%;
         }
         p{
-            padding-left: 2%;
-            .align();
+            text-align: center;
         }
-        
     }
     .apartSec{
+
         padding:3%;
         display: flex;
         @media @phone {
@@ -64,7 +66,7 @@ h4{
         }
 
         .apartText{
-            padding:2%;
+            padding: 10% 0 0 5%;
             h4{
                 padding-bottom: 2%;
                 .align();
@@ -98,6 +100,9 @@ h4{
         padding: 5% 5% 0% 5%;
         .backColor();
         border-right: 2px solid @yellow;
+        @media @phone {
+            border-right: 0px solid @yellow;
+        }
         h1{
             font-size: 3rem;
             padding-bottom: 12%;
@@ -127,6 +132,13 @@ h4{
         img{
             width:40%;
             padding-bottom: 2%;
+        }
+        div{
+            h4{
+            a{
+            text-decoration: none;
+        }
+    }
         }
     }
 }

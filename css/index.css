@@ -162,26 +162,17 @@ h5 {
 h2 {
   font-size: 3.2rem;
 }
-h3 {
-  font-size: 2.8rem;
-  align-self: center;
-  color: #BB4142;
-}
 p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
 header {
   color: black;
-  padding: 0% 0% 10% 0%;
   background-color: #BB4142;
-  height: 90px;
-  border-bottom: 2px solid #F3BE38;
 }
 @media (max-width: 500px) {
   header {
@@ -191,19 +182,18 @@ header {
 }
 header div {
   display: flex;
-  align-content: space-between;
+  justify-content: center;
+  align-items: flex-end;
+  border-bottom: 2px solid #F3BE38;
 }
 @media (max-width: 500px) {
   header div {
     flex-direction: column;
   }
 }
-header div nav {
-  justify-content: space-between;
-  padding: 3.5% 0% 0% 0%;
-}
 @media (max-width: 500px) {
   header div nav {
+    padding: 10px;
     align-self: center;
   }
 }
@@ -214,15 +204,15 @@ header div nav a {
   margin: 32px;
 }
 header div img {
-  width: 30%;
-  margin: 0% 30% 0% 0%;
+  width: 50%;
+  margin: 0% 80% 0% 0%;
   height: 100%;
 }
 @media (max-width: 500px) {
   header div img {
     width: 70%;
     align-self: center;
-    margin: 0;
+    margin: 0 0 0 10%;
   }
 }
 .welcome {
@@ -233,10 +223,25 @@ header div img {
 .welcome div {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 2%;
 }
-.welcome div img {
+.welcome div h3 {
+  align-self: center;
+  color: white;
+  font-size: 3.2rem;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .welcome div h3 {
+    width: 90%;
+  }
+}
+.welcome div .imgTitle img {
   width: 40%;
+}
+.welcome div img {
+  width: 60%;
   align-self: center;
 }
 @media (max-width: 500px) {
@@ -284,11 +289,15 @@ footer {
 }
 .about .team {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: 100vw;
   padding-bottom: 3%;
   padding-left: 5vw;
   padding-right: 5vw;
+}
+.about .team img {
+  align-self: center;
 }
 .about .team .text {
   padding-left: 20%;
@@ -296,11 +305,7 @@ footer {
   height: 30vh;
   width: 70vw;
 }
-.about .team .text h3 {
-  align-self: center;
-  color: #BB4142;
-}
-.about .team .text a {
+.fa-github {
   font-size: 6rem;
   align-self: center;
   color: white;
@@ -338,6 +343,11 @@ h4 {
   background-color: #CA5930;
   padding: 3%;
 }
+.volunteer .volunteerPic img {
+  height: 370px;
+  width: auto;
+  margin: 5% 0% 5% 0%;
+}
 @media (max-width: 500px) {
   .volunteer .volunteerPic {
     display: none;
@@ -346,17 +356,15 @@ h4 {
 .volunteer .volunteerText {
   padding: 2%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   border-bottom: 2px solid #F3BE38;
 }
-.volunteer .volunteerText h4 {
-  align-self: flex-start;
-  padding-right: 2%;
-  border-right: 2px solid #F3BE38;
-  text-align: center;
+.volunteer .volunteerText h1 {
+  font-size: 2.5rem;
+  padding-bottom: 2%;
 }
 .volunteer .volunteerText p {
-  padding-left: 2%;
   text-align: center;
 }
 .volunteer .apartSec {
@@ -369,7 +377,7 @@ h4 {
   }
 }
 .volunteer .apartSec .apartText {
-  padding: 2%;
+  padding: 10% 0 0 5%;
 }
 .volunteer .apartSec .apartText h4 {
   padding-bottom: 2%;
@@ -399,6 +407,11 @@ h4 {
   padding: 5% 5% 0% 5%;
   background-color: #CA5930;
   border-right: 2px solid #F3BE38;
+}
+@media (max-width: 500px) {
+  .info .top {
+    border-right: 0px solid #F3BE38;
+  }
 }
 .info .top h1 {
   font-size: 3rem;
@@ -430,4 +443,7 @@ h4 {
 .info .bottom img {
   width: 40%;
   padding-bottom: 2%;
+}
+.info .bottom div h4 a {
+  text-decoration: none;
 }

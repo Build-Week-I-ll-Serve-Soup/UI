@@ -1,10 +1,7 @@
 
 header{
     color:black;
-    padding:0% 0% 10% 0%;
     background-color: @soupColor;
-    height: 90px;
-    border-bottom: 2px solid @yellow;
 
     @media @phone {
         height: 170px;
@@ -12,33 +9,36 @@ header{
       }
     div{
         display: flex;
-        align-content: space-between;
+        justify-content: center;
+        align-items: flex-end;
+        border-bottom: 2px solid @yellow;
+
         @media @phone {
             flex-direction: column;
           }
         
         nav{
-            justify-content: space-between;
-            padding:3.5% 0% 0% 0%;
             @media @phone {
-                align-self: center;
+                padding:10px;
 
+                align-self: center;
               }
             a{
                 .fontColor();
                 font-size: 2.6rem;
                 text-decoration: none;
                 margin:32px;
+
             }
         }
         img{
-            width: 30%;
-            margin: 0% 30% 0% 0%;
+            width: 50%;
+            margin: 0% 80% 0% 0%;
             height: 100%;     
             @media @phone {
                 width: 70%;
                 align-self: center;
-                margin:0;
+                margin:0 0 0 10%;
 
               }   
         }
@@ -52,9 +52,26 @@ header{
     div{
         display: flex;
         flex-direction: column;
+        align-items: center;
+
         padding: 2%;
-        img{
+        h3{
+            align-self: center;
+            color:white;
+            font-size: 3.2rem;
+            justify-content: center;
+            @media @phone {
+                width: 90%;
+              }
+
+        }
+        .imgTitle{
+            img{
             width:40%;
+            }
+        }
+        img{
+            width:60%;
             align-self: center;
             @media @phone {
                 width: 90%;
@@ -107,24 +124,37 @@ footer {
 .about{
     .team {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 100vw;
     padding-bottom: 3%;
     padding-left: 5vw;
     padding-right: 5vw;
+        img{
+            align-self: center;
+        }
         .text {
             padding-left: 20%;
             padding-top: 4%;
             height: 30vh;
             width: 70vw;
-            h3{
-                align-self: center;
-                .titleColors();
-            }
-            a{
-                .gitFont(6rem,center,white);
-            }
+            // a{
+            //     .gitFont(6rem,center,white);
+
+            // }
+            // h3{
+            //     align-self: center;
+            //     color:white;
+            //     font-size: 10rem;
+            // }
+            
         }
     }
 }
-
+.fa-github{
+    .gitFont(6rem,center,white);
+};
+// a{
+//                 .gitFont(6rem,center,white);
+                
+//             }
